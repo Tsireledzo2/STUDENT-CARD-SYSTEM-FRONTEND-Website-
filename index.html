@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>STUDENT CARD SYSTEM</title>
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        
+            <article id="log" class="centre">
+                <h1>STUDENT CARD SYSTEM</h1>
+                <form method="post" action="#">
+                  
+                        <input type="text" name="name" id="studentNumber" placeholder="Student Number" />
+                        <input type="password" name="email" id="password" placeholder="Password" />
+                    
+                </form>
+                <ul class="actions">
+                    <input id="my-button" type="submit" value="Login" />
+                </ul>
+            </article>
+
+            
+            <article id="take-picture" class="centre">
+                <h1 class="uploadHeading">UPLOAD YOUR DEATIALS HERE</h1>
+                <video id="video" playsinline autoplay></video>
+                <ul class="actions">
+                    <!--<input id="my-button" type="submit" value="Send Message" />-->
+                    <input id="btnTakePic" type="submit" value="Take Picture" />
+                </ul>
+                <!--Residence application-->
+                <p class="selectPara">*Please select if you reside at a school residence or your (home/private accomondation) below*</p>
+                    <select id="combo-box">
+                        <option disabled selected>Select where you reside below</option>
+                        <option id="resOption"  value="optRes">School Residence</option>
+                        <option id="homeOption" value="optHome">Home/Private Accomodation</option>
+                    </select>
+
+                    <select id="res-combo-box">
+                        <option disabled selected>Select where you reside below</option>
+                        <option value="Hartfiled">Hartfiled</option>
+                        <option value="Mountain-House">Mountain House</option>
+                        <option value="Ruskin-House">Ruskin House</option>
+                        <option value="Cape-Suites">Cape Suites</option>
+                        <option value="Catsville">Catsville (Groote Schuur)</option>
+                        <option value="Elizabeth-Women's">Elizabeth Women's Residence (Gardens)
+                        </option>
+                        <option value="NMJ">New Market Junction</option>
+                        <option value="President-House">President House</option>
+                    </select>
+
+                    <input class="resRoomNumber" type="text" id="roomNumber" placeholder="Entre your room number" required>
+                    <ul class="actions">
+                        <input id="application-submittion" type="submit" value="Submit" />
+                    </ul>
+
+                    <!--Home or private-->
+                    <div class="address" id="hpAddress">
+                    <input class="addressStreet" id="addressStreetName"  type="text"  placeholder="Street name" required>
+                    <input class="addressName" id="addressCity" type="text"  placeholder="Name of the City and surburb" required>
+                    <input class="addressCode" id="addressCode"  type="text" placeholder="Zip Code" required>
+                    <ul class="actions">
+                      <input id="application-submittion-Address" type="submit" value="Submit" />
+                  </ul>
+                </div>            
+            </article>
+        
+            <script src="assets/js/pictureScript.js"></script>
+            <script src="assets/js/comboBoxScrollScript.js"></script>
+            <script src="assets/js/articleNavigationScript.js"></script>
+ 
+  
+        
+    </body>
+</html>
