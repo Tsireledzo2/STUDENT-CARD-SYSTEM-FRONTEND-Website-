@@ -2,7 +2,7 @@
 ## INTRODUCTION
 This is a website demo of a system that can be used to make student card for a university
 The website will be used by student
-##How it work?
+## HOW IT WORKS?
 The student will have to signIn using there student number and email password
 If(student has already use the website for making student card){
 the web must not let him/her make another one
